@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Catherine Johnston">
+<meta name="dcterms.date" content="2024-11-03">
 
 <title>PM1 Catherine Johnston</title>
 <style>
@@ -3116,6 +3117,12 @@ Data Science 1 with R (STAT 301-1)</div><p></p>
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 3, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -3180,29 +3187,35 @@ Github Repo Link
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><a href="https://github.com/stat301-1-2024-fall/final-project-1-ccjohnston1.git">Catherine’s GitHub Repo</a></p>
+<p><a href="https://github.com/ccjohnston1/final-project-1.git">Catherine’s GitHub Repo</a></p>
 </div>
 </div>
 <section id="package-load" class="level2">
 <h2 class="anchored" data-anchor-id="package-load">Package load</h2>
 <div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 </section>
 <section id="data-source" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="data-source">Data source</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>name_basics <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;data/name.basics_r_project.csv&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>movies_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">&quot;data/movies_metadata.csv&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
-<p>Name Basics dataset from imdb.com<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup> https://datasets.imdbws.com</p></div></div></section>
+<p>Movies dataset<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup> https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?select=movies_metadata.csv. Accessed Nov 3, 2024</p></div></div><p>This dataset contains 24 variables and 45,466 observations. It takes a look at films released on or before July of 2017 and lists certain aspects of the film, like its original language, where it was filmed, average ratings, budget, revenue, etc. Average ratings of the movies listed are on a scale from 1-5, and were obtained from the official GroupLens website. There are 26 million individual ratings from 270,000 users for all 45,000 movies that have been averaged out for each film. This dataset is a collaboration of a bunch of smaller datasets, all examining different aspects of the 45,000 movies. All 6 smaller datasets have been combined together to create the dataset I am using for this project.</p>
+</section>
 <section id="why-this-data" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="why-this-data">Why this data</h2>
 <p>Blah blah blah<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
 <div class="no-row-height column-margin column-container"><div id="fn2"><p><sup>2</sup> another footnote</p></div></div></section>
 <section id="data-quality-complexity-check" class="level2">
 <h2 class="anchored" data-anchor-id="data-quality-complexity-check">Data quality &amp; complexity check</h2>
-<p>Blah blah blah</p>
 </section>
 <section id="potential-data-issues" class="level2">
 <h2 class="anchored" data-anchor-id="potential-data-issues">Potential data issues</h2>
