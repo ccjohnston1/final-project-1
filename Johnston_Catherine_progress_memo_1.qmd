@@ -70,6 +70,8 @@ library(tidyverse)
 ```{r}
 #| label: data-source-load
 
+readr::read_csv("data/name.basics_r_project.csv") |>
+  slice_head(n = 5)
 
 ```
 
