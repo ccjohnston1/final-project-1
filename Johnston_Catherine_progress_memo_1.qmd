@@ -77,17 +77,28 @@ I am really interested in working with movie data, and I thought this would be a
 
 #load tidyverse
 library(tidyverse)
+library(naniar)
 
 #read data in and assign to new name
 movies_data <- read.csv(file = "data/movies_metadata.csv")
 
-#table to document missingness 
+#glimpse of data
+glimpse(movies_data)
 
-#graph to document missingness
+#variables missing
+ movies_data |>
+  gg_miss_var()
+
+#variable count 
+movies_data |>
+  miss_var_summary() |>
+  filter(n_miss > 0) |>
+  knitr:: kable()
 
 
 ```
 
+I have 24 variables and 45,466 observations. I am working with 20 character variables, 4 numeric variables (including the release date variable which is formatted as a string). This dataset is pretty tidy! There are 263 missing run time values, but in the grand scheme of things, that is not significant at all. There are also 6 values missing for revenue, vote average and vote count. These are not significant at all, so I am working with a pretty clean dataset.
 
 ## Potential data issues
 
