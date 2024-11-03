@@ -70,12 +70,11 @@ library(tidyverse)
 ```{r}
 #| label: data-source-load
 
-readr::read_csv("data/name.basics_r_project.csv") |>
-  slice_head(n = 5)
+name_basics <- read_csv("data/name.basics_r_project.csv")
 
 ```
 
-Blah blah blah^[where blah blah came from, an example of footnote]
+Name Basics dataset from imdb.com^[https://datasets.imdbws.com]
 
 ## Why this data
 

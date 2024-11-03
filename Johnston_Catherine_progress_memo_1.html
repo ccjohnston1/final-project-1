@@ -3192,21 +3192,10 @@ Github Repo Link
 <section id="data-source" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="data-source">Data source</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="st">&quot;data/name.basics_r_project.csv&quot;</span>) <span class="sc">|&gt;</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_head</span>(<span class="at">n =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 5 × 1
-  name.basics                                                                   
-  &lt;chr&gt;                                                                         
-1 &quot;nconst,primaryName,birthYear,deathYear,primaryProfession,knownForTitles&quot;     
-2 &quot;nm0000001,Fred Astaire,1899,1987,\&quot;actor,miscellaneous,producer\&quot;,\&quot;tt007230…
-3 &quot;nm0000002,Lauren Bacall,1924,2014,\&quot;actress,soundtrack,archive_footage\&quot;,\&quot;t…
-4 &quot;nm0000003,Brigitte Bardot,1934,\\N,\&quot;actress,music_department,producer\&quot;,\&quot;t…
-5 &quot;nm0000004,John Belushi,1949,1982,\&quot;actor,writer,music_department\&quot;,\&quot;tt00725…</code></pre>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>name_basics <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;data/name.basics_r_project.csv&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-<p>Blah blah blah<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup> where blah blah came from, an example of footnote</p></div></div></section>
+<p>Name Basics dataset from imdb.com<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup> https://datasets.imdbws.com</p></div></div></section>
 <section id="why-this-data" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="why-this-data">Why this data</h2>
 <p>Blah blah blah<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
