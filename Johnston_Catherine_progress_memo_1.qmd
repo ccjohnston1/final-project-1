@@ -78,12 +78,12 @@ movies_data <- read.csv(file = "data/movies_metadata.csv")
 
 Movies dataset^[https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?select=movies_metadata.csv. Accessed Nov 3, 2024]
 
-This dataset contains 24 variables and 45,466 observations. It takes a look at films released on or before July of 2017 and lists certain aspects of the film, like its original language, where it was filmed, average ratings, budget, revenue, etc. Average ratings of the movies listed are on a scale from 1-5, and were obtained from the official GroupLens website. There are 26 million individual ratings from 270,000 users for all 45,000 movies that have been averaged out for each film. This dataset is a collaboration of a bunch of smaller datasets, all examining different aspects of the 45,000 movies. All 6 smaller datasets have been combined together to create the dataset I am using for this project. 
+This data set contains 24 variables and 45,466 observations. It takes a look at films released on or before July of 2017 and lists certain aspects of the film, like its original language, where it was filmed, average ratings, budget, revenue, etc. Average ratings of the movies listed are on a scale from 1-5, and were obtained from the official GroupLens website. There are 26 million individual ratings from 270,000 users for all 45,000 movies that have been averaged out for each film. This data set is a collaboration of a bunch of smaller data sets, all examining different aspects of the 45,000 movies. All 6 smaller data sets have been combined together to create the data set I am using for this project. 
 
 
 ## Why this data
 
-Blah blah blah^[another footnote]
+I am really interested in working with movie data, and I thought this would be a wonderful opportunity to do so. I love the arts and am a music major myself, so I thought this was a great opportunity to combine art and data science! I am really interested to see how different variables correlate with one another, or if certain genres generally receive higher average ratings than others. Personally, I am a huge horror movie fan, but I always tend to see that horror movies receive lower ratings (despite how good the film actually is) on movie rating sites. I am curious to see if this is true. I want to check whether the movies with the lowest ratings are horror, or if it is just a coincidence! ^[https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?select=movies_metadata.csv. Accessed Nov 3, 2024]
 
 ## Data quality & complexity check
 
