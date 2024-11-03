@@ -58,23 +58,7 @@ GitHub (free account) cannot store large files. If you try to commit and push a 
 
 :::
 
-## Package load
-```{r}
-#| label: package-load
-#| code-fold: TRUE
-
-library(tidyverse)
-```
-
-
 ## Data source
-
-```{r}
-#| label: data-source-load
-#| code-fold: TRUE
-
-movies_data <- read.csv(file = "data/movies_metadata.csv")
-```
 
 Movies dataset^[https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?select=movies_metadata.csv. Accessed Nov 3, 2024]
 
@@ -88,6 +72,19 @@ I am really interested in working with movie data, and I thought this would be a
 ## Data quality & complexity check
 
 ```{r}
+#| label: data-source-load
+#| code-fold: TRUE
+
+#load tidyverse
+library(tidyverse)
+
+#read data in and assign to new name
+movies_data <- read.csv(file = "data/movies_metadata.csv")
+
+#table to document missingness 
+
+#graph to document missingness
+
 
 ```
 
