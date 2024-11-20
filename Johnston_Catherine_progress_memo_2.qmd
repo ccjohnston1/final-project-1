@@ -33,6 +33,9 @@ citation-location: margin
 #| label: package-load
 library(tidyverse)
 
+#dataset load 
+movie_data <- read_csv(file = "data/movies_metadata.csv")
+
 ```
 
 ## Exploratory Data Analysis 1
