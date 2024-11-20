@@ -1,0 +1,74 @@
+---
+title: "Progress Memo 2"
+subtitle: |
+  | Final Project 
+  | Data Science 1 with R (STAT 301-1)
+author: "Catherine Johnston"
+pagetitle: "PM2 Catherine Johnston"
+
+format:
+  html:
+    toc: true
+    toc-depth: 4
+    toc-location: left
+    embed-resources: true
+    link-external-newwindow: true
+
+execute:
+  warning: false
+
+from: markdown+emoji
+reference-location: margin
+citation-location: margin
+---
+
+::: {.callout-tip icon="false"}
+## Github Repo Link
+
+[Catherine's GitHub Repo (ccjohnston1)](https://github.com/ccjohnston1/final-project-1.git)
+:::
+
+## Load Packages
+```{r}
+#| label: package-load
+library(tidyverse)
+
+```
+
+## Exploratory Data Analysis 1
+```{r}
+#| label: eda-1
+
+```
+
+## Exploratory Data Analysis 2
+```{r}
+#| label: eda-2
+
+```
+
+## Exploratory Data Analysis 3
+```{r}
+#| label: eda-3
+
+
+```
+
+
+## Exploratory Data Analysis 4
+```{r}
+#| label: eda-4
+
+
+```
+
+
+## Exploratory Data Analysis 5
+```{r}
+#| label: eda-5
+
+
+```
+
+
+## Summary
