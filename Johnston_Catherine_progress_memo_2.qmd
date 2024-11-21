@@ -5,6 +5,7 @@ subtitle: |
   | Data Science 1 with R (STAT 301-1)
 author: "Catherine Johnston"
 pagetitle: "PM2 Catherine Johnston"
+date: "November 20, 2024"
 
 format:
   html:
@@ -28,9 +29,12 @@ citation-location: margin
 [Catherine's GitHub Repo (ccjohnston1)](https://github.com/ccjohnston1/final-project-1.git)
 :::
 
-## Load Packages
+
 ```{r}
 #| label: package-load
+#| echo: false
+
+#load packages
 library(tidyverse)
 
 #dataset load 
@@ -38,40 +42,74 @@ movie_data <- read_csv(file = "data/movies_metadata.csv")
 
 ```
 
+# Cleaning data
+```{r}
+#| label: clean-up
+#| echo: false
+
+#getting rid of NA rating rows & renaming vote to rating
+clean_movie_data <- movie_data |>
+  filter(!is.na(vote_average) & !is.na(vote_count)) |>
+  rename(average_rating = vote_average, 
+         rating_count = vote_count)
+
+#omitting duplicate rows
+clean_movie_data <- unique(clean_movie_data)
+
+#parsing strings from spoken langauges
+#clean_movie_data <- clean_movie_data |>
+  
+  
+  
+```
+
+
+
 ## Exploratory Data Analysis 1
 ```{r}
 #| label: eda-1
+#| echo: false
+  
 
 ```
+Checking for a correlation between movie run times and ratings
 
 ## Exploratory Data Analysis 2
 ```{r}
 #| label: eda-2
+#| echo: false
 
 ```
+Checking for a correlation between movie run times and ratings
+
 
 ## Exploratory Data Analysis 3
 ```{r}
 #| label: eda-3
+#| echo: false
 
 
 ```
-
+Checking for a correlation between movie run times and ratings
 
 ## Exploratory Data Analysis 4
 ```{r}
 #| label: eda-4
+#| echo: false
 
 
 ```
-
+Checking for a correlation between languages and rating count
 
 ## Exploratory Data Analysis 5
 ```{r}
 #| label: eda-5
+#| echo: false
 
 
 ```
-
+Checking for a correlation between ratings and popularity.
 
 ## Summary
+
+As demonstrated by the above EDA, I want to look into how different aspects of movies (or the creation of movies) affect ratings.
